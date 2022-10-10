@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Task Manager</h1>
+
+@*Grace a la fonctionnalite de component de Blazor je réutilise mon component TaskList autant de fois que necessaire*@
+
+<div class="row">
+    <div class="col-md-4">
+        @*Grace a [Parameter] dans mon component je passe des parametres a Name*@
+        <TaskList Name="Avet"></TaskList>
+    </div>
+    <div class="col-md-4">
+        <TaskList Name="Jean"></TaskList>
+    </div>
+    <div class="col-md-4">
+        <TaskList Name="Lucie"></TaskList>
+    </div>
+</div>
